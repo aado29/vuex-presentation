@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vuex</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Vuex
+
+---
+
+class: center
+
+# What's Vuex
+
+Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion
+
+---
+
+# Vuex Flow
+
+![](https://vuex.vuejs.org/flow.png)
+
+---
+
+# How it works
+
+![](https://vuex.vuejs.org/vuex.png)
+
+---
+
+## Vuex Store: Similar to the Vue Instance
+
+```[js]
+const app = new Vue({
+  data: {
+    ...
+  },
+  methods: {
+    ...
+  },
+  computed: {
+    ...
+  }
+});
+```
+
+```[js]
+const app = new Vuex.Store({
+  state: {
+    ...
+  },
+  actions: {
+    ...
+  },
+  getters: {
+    ...
+  }
+});
+```
+
+---
+
+# Commit and track state changes
+
+```[js]
+const app = new Vuex.Store({
+  state: {
+    ...
+  },
+  mutations: {
+    ...
+  },
+  actions: {
+    ...
+  },
+  getters: {
+    ...
+  }
+});
+```
+
+---
+
+## Example
+
+  - [Todo List](https://aado29.github.io/todo-vuex/dist/index.html "title" target="_blank")
+
+---
+
+class: center, middle
+
+## Thanks You!
+
+![](http://i.imgur.com/fpmuGIX.gif)
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
